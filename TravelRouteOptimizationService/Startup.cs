@@ -26,6 +26,11 @@ namespace TravelRouteOptimizationService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MyApi", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +42,20 @@ namespace TravelRouteOptimizationService
             }
 
             app.UseHttpsRedirection();
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger(c =>
+            {
+                c.SerializeAsV2 = true;
+                c.RouteTemplate = "swagger/{documentName}/swagger.json";
+            });
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("v1/swagger.json", "TROApi");
+                c.RoutePrefix = "swagger";
+            });
+
 
             app.UseRouting();
 
