@@ -18,21 +18,21 @@ namespace NetCoreBasicApi.Controllers.v1
 
         [HttpPost]
         [Route("LogIn")]
-        public LoginResponse Login(LoginRequest loginRequest) 
+        public ActionResult<LoginResponse> Login(LoginRequest loginRequest) 
         {
             LoginResponse result = new LoginResponse();
             _authenticationService.login();
             result.IsSuccessful = true;
-            return result;
+            return Ok(result);
         }
 
         [HttpPost]
         [Route("SignIn")]
-        public SignInResponse SignIn(SignInRequest signInRequest) {
+        public ActionResult<SignInResponse> SignIn(SignInRequest signInRequest) {
             SignInResponse result = new SignInResponse();
             _authenticationService.signIn();
             result.IsSuccessful = true;
-            return result;
+            return Ok(result);
         }
     }
 }
