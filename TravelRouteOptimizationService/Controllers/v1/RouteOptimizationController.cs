@@ -9,20 +9,34 @@ namespace TravelRouteOptimizationService.Controllers.v1
     public class RouteOptimizationController : ControllerBase
     {
        
-            private readonly IRouteOptimizationService _routeOptimizationService;
+        private readonly IRouteOptimizationService _routeOptimizationService;
 
 
-            RouteOptimizationController(IRouteOptimizationService routeOptimizationService)
-            {
-                this._routeOptimizationService = routeOptimizationService;
-            }
+        RouteOptimizationController(IRouteOptimizationService routeOptimizationService)
+        {
+            this._routeOptimizationService = routeOptimizationService;
+        }
 
-            [HttpPost]
-            [Route("Route")]
-            public ActionResult Route(String test)
-            {
-                return Ok();
-            }
+        [HttpPost]
+        [Route("Route")]
+        public ActionResult Route(String test)
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("SaveRoute")]
+        public ActionResult SaveRoute(String test)
+        {
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("GetRoutes")]
+        public ActionResult GetRoutes(String test)
+        {
+            return Ok();
+        }
 
     }
 }
