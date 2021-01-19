@@ -31,9 +31,9 @@ namespace TravelRouteOptimizationService.Controllers.v1
             return Ok();
         }
 
-        [HttpGet]
-        [Route("GetRoutes")]
-        public ActionResult GetRoutes(String test)
+        [HttpPost]
+        [Route("SearchRoutes")]
+        public ActionResult SearchRoutes(String bound)
         {
             return Ok();
         }

@@ -65,6 +65,7 @@ namespace TravelRouteOptimizationService
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }
