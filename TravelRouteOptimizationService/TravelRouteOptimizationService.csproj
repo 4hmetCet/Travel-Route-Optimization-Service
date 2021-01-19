@@ -7,12 +7,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\v1\" />
-    <Folder Include="Services\" />
-    <Folder Include="Data\" />
-    <Folder Include="Services\ServiceImplementations\" />
-    <Folder Include="Services\ApplicationServices\" />
-    <Folder Include="Data\Repositories\" />
-    <Folder Include="Data\RepositoryImplementations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />

@@ -9,11 +9,11 @@ namespace NetCoreBasicApi.Controllers.v1
     [Route("api/v1/[controller]")]
     public class AuthenticationController : ControllerBase
     {
-        //private readonly IAuthenticationService _authenticationService;
+        private readonly IAuthenticationService _authenticationService;
 
 
-        AuthenticationController() {
-            //this._authenticationService = authenticationService;
+        AuthenticationController(IAuthenticationService authenticationService) {
+            this._authenticationService = authenticationService;
         }
 
         [HttpPost]
@@ -21,7 +21,7 @@ namespace NetCoreBasicApi.Controllers.v1
         public ActionResult<LoginResponse> Login(LoginRequest loginRequest) 
         {
             LoginResponse result = new LoginResponse();
-           // _authenticationService.login();
+            _authenticationService.login();
             result.IsSuccessful = true;
             return Ok(result);
         }
@@ -30,7 +30,7 @@ namespace NetCoreBasicApi.Controllers.v1
         [Route("SignIn")]
         public ActionResult<SignInResponse> SignIn(SignInRequest signInRequest) {
             SignInResponse result = new SignInResponse();
-           // _authenticationService.signIn();
+            _authenticationService.signIn();
             result.IsSuccessful = true;
             return Ok(result);
         }

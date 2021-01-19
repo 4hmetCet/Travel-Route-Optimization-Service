@@ -21,6 +21,12 @@ namespace TravelRouteOptimizationService.Controllers.v1
         [Route("Route")]
         public ActionResult Route(String test)
         {
+            try
+            {
+            }
+            catch (Exception ex) {
+                return BadRequest();
+            }
             return Ok();
         }
 
@@ -28,6 +34,13 @@ namespace TravelRouteOptimizationService.Controllers.v1
         [Route("SaveRoute")]
         public ActionResult SaveRoute(String test)
         {
+            try
+            {
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
             return Ok();
         }
 
@@ -35,6 +48,13 @@ namespace TravelRouteOptimizationService.Controllers.v1
         [Route("SearchRoutes")]
         public ActionResult SearchRoutes(String bound)
         {
+            try
+            {
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
             return Ok();
         }
 
