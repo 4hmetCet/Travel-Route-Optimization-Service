@@ -22,19 +22,21 @@ namespace TravelRouteOptimizationService.Controllers.v1
         [Route("Route")]
         public ActionResult Route(RouteRequest routeRequest)
         {
+            RouteResponse routeResponse = new RouteResponse();
             try
             {
             }
             catch (Exception ex) {
                 return BadRequest();
             }
-            return Ok();
+            return Ok(routeResponse);
         }
 
         [HttpPost]
         [Route("SaveRoute")]
         public ActionResult SaveRoute(SaveRouteRequest saveRouteRequest)
         {
+            SaveRouteResponse saveRouteResponse = new SaveRouteResponse();
             try
             {
             }
@@ -42,13 +44,14 @@ namespace TravelRouteOptimizationService.Controllers.v1
             {
                 return BadRequest();
             }
-            return Ok();
+            return Ok(saveRouteResponse);
         }
 
         [HttpPost]
         [Route("SearchRoutes")]
         public ActionResult SearchRoutes(SearchRoutesRequest searchRoutesRequest)
         {
+            SearchRoutesResponse searchRoutesResponse = new SearchRoutesResponse();
             try
             {
             }
@@ -56,7 +59,7 @@ namespace TravelRouteOptimizationService.Controllers.v1
             {
                 return BadRequest();
             }
-            return Ok();
+            return Ok(searchRoutesResponse);
         }
 
     }

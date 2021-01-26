@@ -14,7 +14,7 @@ namespace TravelRouteOptimizationService.Model.Contracts
         public DateTime? Date { get; set; }
         public string Bounds { get; set; }
         public int TravelType { get; set; }
-        public string PointList { get; set; }
+        public List<Point> PointList { get; set; }
 
     }
 }
