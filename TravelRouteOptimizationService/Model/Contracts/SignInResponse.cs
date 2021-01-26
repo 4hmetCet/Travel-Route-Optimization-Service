@@ -8,5 +8,7 @@ namespace NetCoreBasicApi.Model.Contracts
         }
 
         public bool IsSuccessful { get; set; }
+
+        public string ErrorMessage { get; set; }
     }
 }

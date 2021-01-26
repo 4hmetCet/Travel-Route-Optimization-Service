@@ -6,7 +6,8 @@ using TravelRouteOptimizationService.Data.RepositoryImplementations;
 
 namespace TravelRouteOptimizationService.Data.Repositories
 {
-    interface AuthenticationRepository : IAuthenticationRepository
+    public class AuthenticationRepository : IAuthenticationRepository
     {
+        public AuthenticationRepository() { }
     }
 }

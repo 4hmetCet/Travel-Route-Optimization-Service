@@ -12,7 +12,7 @@ namespace NetCoreBasicApi.Controllers.v1
         private readonly IAuthenticationService _authenticationService;
 
 
-        AuthenticationController(IAuthenticationService authenticationService) {
+        public AuthenticationController(IAuthenticationService authenticationService) {
             this._authenticationService = authenticationService;
         }
 

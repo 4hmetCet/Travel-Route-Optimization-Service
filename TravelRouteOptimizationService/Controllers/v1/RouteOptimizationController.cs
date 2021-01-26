@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using TravelRouteOptimizationService.Model.Contracts;
 using TravelRouteOptimizationService.Services.ServiceImplementations;
 
 namespace TravelRouteOptimizationService.Controllers.v1
@@ -12,14 +13,14 @@ namespace TravelRouteOptimizationService.Controllers.v1
         private readonly IRouteOptimizationService _routeOptimizationService;
 
 
-        RouteOptimizationController(IRouteOptimizationService routeOptimizationService)
+        public RouteOptimizationController(IRouteOptimizationService routeOptimizationService)
         {
             this._routeOptimizationService = routeOptimizationService;
         }
 
         [HttpPost]
         [Route("Route")]
-        public ActionResult Route(String test)
+        public ActionResult Route(RouteRequest routeRequest)
         {
             try
             {
@@ -32,7 +33,7 @@ namespace TravelRouteOptimizationService.Controllers.v1
 
         [HttpPost]
         [Route("SaveRoute")]
-        public ActionResult SaveRoute(String test)
+        public ActionResult SaveRoute(SaveRouteRequest saveRouteRequest)
         {
             try
             {
@@ -46,7 +47,7 @@ namespace TravelRouteOptimizationService.Controllers.v1
 
         [HttpPost]
         [Route("SearchRoutes")]
-        public ActionResult SearchRoutes(String bound)
+        public ActionResult SearchRoutes(SearchRoutesRequest searchRoutesRequest)
         {
             try
             {

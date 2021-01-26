@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TravelRouteOptimizationService.Data.Repositories;
+using TravelRouteOptimizationService.Data.RepositoryImplementations;
+using TravelRouteOptimizationService.Services.ApplicationServices;
+using TravelRouteOptimizationService.Services.ServiceImplementations;
 
 namespace TravelRouteOptimizationService
 {
@@ -31,6 +35,12 @@ namespace TravelRouteOptimizationService
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MyApi", Version = "v1" });
             });
+
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+
+            services.AddScoped<IRouteOptimizationService, RouteOptimizationService>();
+            services.AddScoped<IRouteOptimizationRepository, RouteOptimizationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,7 +75,9 @@ namespace TravelRouteOptimizationService
             {
                 endpoints.MapControllers();
             });
+
             
+
         }
     }
 }
