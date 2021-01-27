@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TravelRouteOptimizationService.Model;
 
 namespace TravelRouteOptimizationService.Data.RepositoryImplementations
 {
-    interface IAuthenticationRepository
+    public interface IAuthenticationRepository
     {
+        Task<User> GetUserByMailandPassword(String email, String password);
+        Task<bool> InsertUser(String name, String surname, String email, String password);
     }
 }

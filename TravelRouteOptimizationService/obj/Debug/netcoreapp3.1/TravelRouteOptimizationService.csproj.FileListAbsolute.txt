@@ -1,7 +1,3 @@
-C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.csprojAssemblyReference.cache
-C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.csproj.CoreCompileInputs.cache
-C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.AssemblyInfoInputs.cache
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.AssemblyInfo.cs
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -24,3 +20,14 @@ C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\Trav
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.dll
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.pdb
 C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.genruntimeconfig.cache
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.csprojAssemblyReference.cache
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.csproj.CoreCompileInputs.cache
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\acetinkaya\Source\Repos\4hmetCet\Travel-Route-Optimization-Service\TravelRouteOptimizationService\obj\Debug\netcoreapp3.1\TravelRouteOptimizationService.MvcApplicationPartsAssemblyInfo.cache

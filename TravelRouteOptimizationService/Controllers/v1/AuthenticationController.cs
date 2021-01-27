@@ -18,21 +18,39 @@ namespace NetCoreBasicApi.Controllers.v1
 
         [HttpPost]
         [Route("LogIn")]
-        public ActionResult<LoginResponse> Login(LoginRequest loginRequest) 
+        public async System.Threading.Tasks.Task<ActionResult<LoginResponse>> LoginAsync(LoginRequest loginRequest) 
         {
             LoginResponse result = new LoginResponse();
-            _authenticationService.login();
-            result.IsSuccessful = true;
-            return Ok(result);
+            bool isSuccess = await _authenticationService.login(loginRequest.UserName, loginRequest.Password);
+            if (isSuccess)
+            {
+                result.IsSuccessful = true;
+                return Ok(result);
+            }
+            else {
+                result.IsSuccessful = false;
+                result.ErrorMessage = "Kullanıcı adı veya şifre hatalı";
+                return BadRequest(result);
+            }
+           
         }
 
         [HttpPost]
         [Route("SignIn")]
-        public ActionResult<SignInResponse> SignIn(SignInRequest signInRequest) {
+        public async System.Threading.Tasks.Task<ActionResult<SignInResponse>> SignInAsync(SignInRequest signInRequest) {
             SignInResponse result = new SignInResponse();
-            _authenticationService.signIn();
-            result.IsSuccessful = true;
-            return Ok(result);
+            bool isSuccess = await _authenticationService.signIn(signInRequest.Name, signInRequest.Surname, signInRequest.Email,signInRequest.Password);
+            if (isSuccess)
+            {
+                result.IsSuccessful = true;
+                return Ok(result);
+            }
+            else
+            {
+                result.IsSuccessful = false;
+                result.ErrorMessage = "İşlem başarısız";
+                return BadRequest(result);
+            }
         }
     }
 }

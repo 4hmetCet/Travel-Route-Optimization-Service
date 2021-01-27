@@ -7,8 +7,8 @@ namespace TravelRouteOptimizationService.Services.ServiceImplementations
 {
     public interface IAuthenticationService
     {
-        public Task<Boolean> login();
-        public Task<Boolean> signIn();
+        public Task<Boolean> login(String email, String password);
+        public Task<Boolean> signIn(String name, String surname, String email, String password);
 
     }
 }
